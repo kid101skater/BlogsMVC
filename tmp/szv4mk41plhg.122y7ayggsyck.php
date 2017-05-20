@@ -25,20 +25,23 @@
             </div>
             <div class="col-sm-9">
             <div class="container">
-                <div class="col-sm-2">
             <!-- repeat card layout for each blog -->
+            <?php foreach (($users?:[]) as $user): ?>
+            <div class="col-sm-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Users Profile">
+                    <img class="card-img-top img-responsive" src="<?= './profilephotos/'.$user->getProfilePic() ?>" alt="Users Profile">
                         <div class="card-block">
-                            <h4 class="card-title">Username - Date</h4>
+                            <h4 class="card-title"><?= $user->getUserName() ?></h4>
                             <hr>
-                                <p class="card-text"><a href="#UsersBlog">View Blogs</a> - Total: 10</p>
+                                <p class="card-text"><a href="#UsersBlog"><a href="<?= './Blogs/'.$user->getUserID() ?>">View Blogs</a> - Total: <?= $user->getPostCount() ?></p>
                             <hr>
-                                Users latest post
+                                <span><?= $user->getPostExcerpt() ?></span>
                                 </p>
                         </div>
                 </div>
-                </div>
+            </div>
+            <?php endforeach; ?>
+                
             </div>
             </div>
         </div>

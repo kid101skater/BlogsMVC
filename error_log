@@ -23,3 +23,41 @@
 [20-May-2017 00:52:37 America/Chicago] [IT328/BlogsMVC/index.php:47] Base->run()
 [20-May-2017 00:53:08 America/Chicago] HTTP 404 (GET /index.php)
 [20-May-2017 00:53:08 America/Chicago] [IT328/BlogsMVC/index.php:47] Base->run()
+[20-May-2017 01:34:59 America/Chicago] Call to a member function prepare() on null [/home/klocke/public_html/IT328/BlogsMVC/index.php:28]
+[20-May-2017 01:34:59 America/Chicago] [IT328/BlogsMVC/index.php:65] Base->run()
+[20-May-2017 01:35:27 America/Chicago] Call to a member function prepare() on null [/home/klocke/public_html/IT328/BlogsMVC/index.php:26]
+[20-May-2017 01:35:27 America/Chicago] [IT328/BlogsMVC/index.php:63] Base->run()
+[20-May-2017 01:35:52 America/Chicago] Call to a member function prepare() on null [/home/klocke/public_html/IT328/BlogsMVC/index.php:26]
+[20-May-2017 01:35:52 America/Chicago] [IT328/BlogsMVC/index.php:63] Base->run()
+[20-May-2017 01:35:55 America/Chicago] Call to a member function prepare() on null [/home/klocke/public_html/IT328/BlogsMVC/index.php:26]
+[20-May-2017 01:35:55 America/Chicago] [IT328/BlogsMVC/index.php:63] Base->run()
+[20-May-2017 01:37:18 America/Chicago] Class 'HomePageUser' not found [/home/klocke/public_html/IT328/BlogsMVC/index.php:39]
+[20-May-2017 01:37:18 America/Chicago] [IT328/BlogsMVC/index.php:72] Base->run()
+[20-May-2017 01:37:19 America/Chicago] Class 'HomePageUser' not found [/home/klocke/public_html/IT328/BlogsMVC/index.php:39]
+[20-May-2017 01:37:19 America/Chicago] [IT328/BlogsMVC/index.php:72] Base->run()
+[20-May-2017 01:37:50 America/Chicago] Missing argument 1 for HomePageUser::__construct(), called in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 39 and defined
+[20-May-2017 01:37:50 America/Chicago] [IT328/BlogsMVC/classes/HomePageUser.php:13] Base->{closure}()
+[20-May-2017 01:37:50 America/Chicago] [IT328/BlogsMVC/index.php:39] HomePageUser->__construct()
+[20-May-2017 01:37:50 America/Chicago] [IT328/BlogsMVC/index.php:72] Base->run()
+[20-May-2017 01:38:37 America/Chicago] Call to undefined function HomePageUser() [/home/klocke/public_html/IT328/BlogsMVC/index.php:44]
+[20-May-2017 01:38:37 America/Chicago] [IT328/BlogsMVC/index.php:72] Base->run()
+[20-May-2017 01:38:39 America/Chicago] Call to undefined function HomePageUser() [/home/klocke/public_html/IT328/BlogsMVC/index.php:44]
+[20-May-2017 01:38:39 America/Chicago] [IT328/BlogsMVC/index.php:72] Base->run()
+[20-May-2017 02:18:19 America/Chicago] Class 'Database' not found [/home/klocke/public_html/IT328/BlogsMVC/classes/HomePageUser.php:67]
+[20-May-2017 02:18:19 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:37] HomePageUser->getPostCount()
+[20-May-2017 02:18:19 America/Chicago] [IT328/BlogsMVC/index.php:60] Preview->render()
+[20-May-2017 02:18:19 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 02:21:08 America/Chicago] HTTP 404 (GET /Blogs/1)
+[20-May-2017 02:21:08 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 02:23:32 America/Chicago] Object of class HomePageUser could not be converted to string
+[20-May-2017 02:23:32 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:33] Base->{closure}()
+[20-May-2017 02:23:32 America/Chicago] [IT328/BlogsMVC/index.php:60] Preview->render()
+[20-May-2017 02:23:32 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 02:23:42 America/Chicago] HTTP 404 (GET /index.php)
+[20-May-2017 02:23:42 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 02:23:46 America/Chicago] HTTP 404 (GET /index.html)
+[20-May-2017 02:23:46 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 02:23:51 America/Chicago] Object of class HomePageUser could not be converted to string
+[20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:33] Base->{closure}()
+[20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/index.php:60] Preview->render()
+[20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
