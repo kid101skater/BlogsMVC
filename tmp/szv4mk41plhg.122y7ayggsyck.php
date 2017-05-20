@@ -28,12 +28,12 @@
             <!-- repeat card layout for each blog -->
             <?php foreach (($users?:[]) as $user): ?>
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card homeBlogCards">
                     <img class="card-img-top img-responsive" src="<?= './profilephotos/'.$user->getProfilePic() ?>" alt="Users Profile">
                         <div class="card-block">
-                            <h4 class="card-title"><?= $user->getUserName() ?></h4>
+                            <h4 class="card-title"><center><?= $user->getUserName() ?></center></h4>
                             <hr>
-                                <p class="card-text"><a href="#UsersBlog"><a href="<?= './Blogs/'.$user->getUserID() ?>">View Blogs</a> - Total: <?= $user->getPostCount() ?></p>
+                                <p class="card-text"><center><a href="<?= './'.$user->getUserName() ?>">View Blogs</a> - Total: <?= $user->getPostCount() ?></center></p>
                             <hr>
                                 <span><?= $user->getPostExcerpt() ?></span>
                                 </p>

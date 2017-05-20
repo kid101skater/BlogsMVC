@@ -3,6 +3,12 @@ body
     margin: 0;
     background-color: #D3D3D3;
 }
+
+div.homeBlogCards
+{
+    background-color: #ebebeb;
+}
+
 div.side_nav
 {
     background-color: #ebebeb;

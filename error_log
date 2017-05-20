@@ -61,3 +61,250 @@
 [20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:33] Base->{closure}()
 [20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/index.php:60] Preview->render()
 [20-May-2017 02:23:51 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 03:38:02 America/Chicago] HTTP 404 (GET /Blogs/1)
+[20-May-2017 03:38:02 America/Chicago] [IT328/BlogsMVC/index.php:74] Base->run()
+[20-May-2017 03:56:56 America/Chicago] Illegal string offset 'id'
+[20-May-2017 03:56:56 America/Chicago] [IT328/BlogsMVC/index.php:75] Base->{closure}()
+[20-May-2017 03:56:56 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:57:27 America/Chicago] Illegal string offset 'id'
+[20-May-2017 03:57:27 America/Chicago] [IT328/BlogsMVC/index.php:75] Base->{closure}()
+[20-May-2017 03:57:27 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:57:45 America/Chicago] Illegal string offset 'userid'
+[20-May-2017 03:57:45 America/Chicago] [IT328/BlogsMVC/index.php:75] Base->{closure}()
+[20-May-2017 03:57:45 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:58:41 America/Chicago] Illegal string offset 'userid'
+[20-May-2017 03:58:41 America/Chicago] [IT328/BlogsMVC/index.php:75] Base->{closure}()
+[20-May-2017 03:58:41 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:08 America/Chicago] HTTP 404 (GET /Blogs/styles/Style.css)
+[20-May-2017 03:59:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:08 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 03:59:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:08 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 03:59:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:14 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 03:59:14 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:14 America/Chicago] HTTP 404 (GET /Blogs/styles/Style.css)
+[20-May-2017 03:59:14 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:14 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 03:59:14 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:14 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 03:59:14 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:14 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 03:59:14 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:43 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 03:59:43 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:43 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 03:59:43 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:43 America/Chicago] Class 'database' not found [/home/klocke/public_html/IT328/BlogsMVC/index.php:76]
+[20-May-2017 03:59:43 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:54 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 03:59:54 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:54 America/Chicago] syntax error, unexpected '}', expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:57]
+[20-May-2017 03:59:54 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[20-May-2017 03:59:54 America/Chicago] [IT328/BlogsMVC/index.php:76] spl_autoload_call()
+[20-May-2017 03:59:54 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 03:59:54 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 03:59:54 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:08 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 04:00:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:08 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 04:00:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:08 America/Chicago] HTTP 404 (GET /Blogs/styles/Style.css)
+[20-May-2017 04:00:08 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:09 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 04:00:09 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:09 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 04:00:09 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:16 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 04:00:16 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:16 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 04:00:16 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:20 America/Chicago] HTTP 404 (GET /Blogs/styles/Style.css)
+[20-May-2017 04:00:20 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:20 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 04:00:20 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:20 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 04:00:20 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:51 America/Chicago] HTTP 404 (GET /Blogs/About)
+[20-May-2017 04:00:51 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:51 America/Chicago] HTTP 404 (GET /Blogs/images/blog_logo.png)
+[20-May-2017 04:00:51 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:52 America/Chicago] HTTP 404 (GET /Blogs/images/trumpet.png)
+[20-May-2017 04:00:52 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:00:56 America/Chicago] HTTP 404 (GET /Blogs/1)
+[20-May-2017 04:00:56 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:01:02 America/Chicago] HTTP 404 (GET /Blogs/1)
+[20-May-2017 04:01:02 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:01:07 America/Chicago] HTTP 404 (GET /Blogs/1)
+[20-May-2017 04:01:07 America/Chicago] [IT328/BlogsMVC/index.php:87] Base->run()
+[20-May-2017 04:09:44 America/Chicago] syntax error, unexpected '}', expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:72]
+[20-May-2017 04:09:44 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[20-May-2017 04:09:44 America/Chicago] [IT328/BlogsMVC/classes/HomePageUser.php:67] spl_autoload_call()
+[20-May-2017 04:09:44 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:36] HomePageUser->getPostCount()
+[20-May-2017 04:09:44 America/Chicago] [IT328/BlogsMVC/index.php:60] Preview->render()
+[20-May-2017 04:09:44 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:10:21 America/Chicago] Call to a member function bindParam() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:62]
+[20-May-2017 04:10:21 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserIDFromUserName()
+[20-May-2017 04:10:21 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:11:21 America/Chicago] Call to a member function bindParam() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:62]
+[20-May-2017 04:11:21 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserIDFromUserName()
+[20-May-2017 04:11:21 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:12:10 America/Chicago] Class 'User' not found [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:12:10 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserIDFromUserName()
+[20-May-2017 04:12:10 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:12:12 America/Chicago] Class 'User' not found [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:12:12 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserIDFromUserName()
+[20-May-2017 04:12:12 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:15:46 America/Chicago] Object of class PDOStatement could not be converted to string
+[20-May-2017 04:15:46 America/Chicago] [IT328/BlogsMVC/classes/database.php:69] Base->{closure}()
+[20-May-2017 04:15:46 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserIDFromUserName()
+[20-May-2017 04:15:46 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:19:47 America/Chicago] Call to a member function debugDumpParams() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:19:47 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserIDFromUserName()
+[20-May-2017 04:19:47 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:19:49 America/Chicago] Call to a member function debugDumpParams() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:19:49 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserIDFromUserName()
+[20-May-2017 04:19:49 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:20:12 America/Chicago] Call to a member function debugDumpParams() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:20:12 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserIDFromUserName()
+[20-May-2017 04:20:12 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:21:09 America/Chicago] Call to undefined method Database::getUserIDFromUserName() [/home/klocke/public_html/IT328/BlogsMVC/index.php:77]
+[20-May-2017 04:21:09 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:21:30 America/Chicago] Call to a member function debugDumpParams() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:69]
+[20-May-2017 04:21:30 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getUserFromUserName()
+[20-May-2017 04:21:30 America/Chicago] [IT328/BlogsMVC/index.php:88] Base->run()
+[20-May-2017 04:24:38 America/Chicago] Call to a member function debugDumpParams() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:46]
+[20-May-2017 04:24:38 America/Chicago] [IT328/BlogsMVC/index.php:77] Database->getSingleUserProfile()
+[20-May-2017 04:24:38 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:31:40 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:31:40 America/Chicago] [IT328/BlogsMVC/index.php:84] Preview->render()
+[20-May-2017 04:31:40 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:32:01 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:32:01 America/Chicago] [IT328/BlogsMVC/index.php:84] Preview->render()
+[20-May-2017 04:32:01 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:33:16 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:80]
+[20-May-2017 04:33:16 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserFromUserName()
+[20-May-2017 04:33:16 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:33:30 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:81]
+[20-May-2017 04:33:30 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserFromUserName()
+[20-May-2017 04:33:30 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:34:34 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:81]
+[20-May-2017 04:34:34 America/Chicago] [IT328/BlogsMVC/index.php:78] Database->getUserFromUserName()
+[20-May-2017 04:34:34 America/Chicago] [IT328/BlogsMVC/index.php:89] Base->run()
+[20-May-2017 04:35:17 America/Chicago] PHP Parse error:  syntax error, unexpected '"Username: "' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 78
+[20-May-2017 04:35:32 America/Chicago] PHP Parse error:  syntax error, unexpected '"Username: "' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 78
+[20-May-2017 04:35:33 America/Chicago] PHP Parse error:  syntax error, unexpected '"Username: "' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 78
+[20-May-2017 04:35:44 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:81]
+[20-May-2017 04:35:44 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:35:44 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:37:19 America/Chicago] Call to a member function query() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:64]
+[20-May-2017 04:37:19 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:37:19 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:37:21 America/Chicago] Call to a member function query() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:64]
+[20-May-2017 04:37:21 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:37:21 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:37:22 America/Chicago] Call to a member function query() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:64]
+[20-May-2017 04:37:22 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:37:22 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:37:57 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:88]
+[20-May-2017 04:37:57 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:37:57 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:38:12 America/Chicago] Call to a member function getUserID() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:87]
+[20-May-2017 04:38:12 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUserFromUserName()
+[20-May-2017 04:38:12 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 04:40:39 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:40:39 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:40:39 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:41:04 America/Chicago] Missing argument 1 for User::__construct(), called in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 78 and defined
+[20-May-2017 04:41:04 America/Chicago] [IT328/BlogsMVC/classes/User.php:9] Base->{closure}()
+[20-May-2017 04:41:04 America/Chicago] [IT328/BlogsMVC/index.php:78] User->__construct()
+[20-May-2017 04:41:04 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:42:47 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:42:47 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:42:47 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:45:50 America/Chicago] Object of class User could not be converted to string
+[20-May-2017 04:45:50 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1] Base->{closure}()
+[20-May-2017 04:45:50 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:45:50 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:48:32 America/Chicago] Call to a member function prepare() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:65]
+[20-May-2017 04:48:32 America/Chicago] [IT328/BlogsMVC/index.php:79] Database->getUserFromUserName()
+[20-May-2017 04:48:32 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:48:48 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:48:48 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:48:48 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:49:46 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:49:46 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:49:46 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:50:18 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:50:18 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:50:18 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:50:47 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:50:47 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:50:47 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:51:04 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:51:04 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:51:04 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:51:51 America/Chicago] Call to a member function bindParam() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:66]
+[20-May-2017 04:51:51 America/Chicago] [IT328/BlogsMVC/index.php:79] Database->getUserFromUserName()
+[20-May-2017 04:51:51 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:51:52 America/Chicago] Call to a member function bindParam() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:66]
+[20-May-2017 04:51:52 America/Chicago] [IT328/BlogsMVC/index.php:79] Database->getUserFromUserName()
+[20-May-2017 04:51:52 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:52:10 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:52:10 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:52:10 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:52:30 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:52:30 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:52:30 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:55:01 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:55:01 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:55:01 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:57:29 America/Chicago] syntax error, unexpected '{' [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:71]
+[20-May-2017 04:57:29 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[20-May-2017 04:57:29 America/Chicago] [IT328/BlogsMVC/index.php:76] spl_autoload_call()
+[20-May-2017 04:57:29 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 04:57:41 America/Chicago] Call to a member function getUserName() on string [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1]
+[20-May-2017 04:57:41 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 04:57:41 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 05:04:20 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php on line 1
+[20-May-2017 05:04:20 America/Chicago] Fatal error: Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes)
+[20-May-2017 05:04:20 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1] 
+[20-May-2017 05:04:20 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in Unknown on line 0
+[20-May-2017 05:04:37 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php on line 1
+[20-May-2017 05:04:37 America/Chicago] Fatal error: Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes)
+[20-May-2017 05:04:37 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:1] 
+[20-May-2017 05:04:37 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in Unknown on line 0
+[20-May-2017 05:06:45 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:32]
+[20-May-2017 05:06:45 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 05:06:45 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 05:07:08 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:32]
+[20-May-2017 05:07:08 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 05:07:08 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 05:07:10 America/Chicago] Call to a member function getUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:32]
+[20-May-2017 05:07:10 America/Chicago] [IT328/BlogsMVC/index.php:85] Preview->render()
+[20-May-2017 05:07:10 America/Chicago] [IT328/BlogsMVC/index.php:90] Base->run()
+[20-May-2017 05:33:27 America/Chicago] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[20-May-2017 05:33:27 America/Chicago] [IT328/BlogsMVC/classes/database.php:92] PDOStatement->execute()
+[20-May-2017 05:33:27 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUsersBlogPosts()
+[20-May-2017 05:33:27 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 05:34:22 America/Chicago] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[20-May-2017 05:34:22 America/Chicago] [IT328/BlogsMVC/classes/database.php:92] PDOStatement->execute()
+[20-May-2017 05:34:22 America/Chicago] [IT328/BlogsMVC/index.php:80] Database->getUsersBlogPosts()
+[20-May-2017 05:34:22 America/Chicago] [IT328/BlogsMVC/index.php:91] Base->run()
+[20-May-2017 05:48:37 America/Chicago] Object of class BlogPosts could not be converted to string
+[20-May-2017 05:48:37 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:41] Base->{closure}()
+[20-May-2017 05:48:37 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 05:48:37 America/Chicago] [IT328/BlogsMVC/index.php:100] Base->run()
+[20-May-2017 05:59:03 America/Chicago] Object of class BlogPosts could not be converted to string
+[20-May-2017 05:59:03 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:47] Base->{closure}()
+[20-May-2017 05:59:03 America/Chicago] [IT328/BlogsMVC/index.php:96] Preview->render()
+[20-May-2017 05:59:03 America/Chicago] [IT328/BlogsMVC/index.php:101] Base->run()
+[20-May-2017 05:59:54 America/Chicago] Object of class BlogPosts could not be converted to string
+[20-May-2017 05:59:54 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:47] Base->{closure}()
+[20-May-2017 05:59:54 America/Chicago] [IT328/BlogsMVC/index.php:96] Preview->render()
+[20-May-2017 05:59:54 America/Chicago] [IT328/BlogsMVC/index.php:101] Base->run()
+[20-May-2017 06:00:05 America/Chicago] Object of class BlogPosts could not be converted to string
+[20-May-2017 06:00:05 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:47] Base->{closure}()
+[20-May-2017 06:00:05 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 06:00:05 America/Chicago] [IT328/BlogsMVC/index.php:100] Base->run()
+[20-May-2017 06:01:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'post' (T_STRING), expecting ',' or ';' in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 83

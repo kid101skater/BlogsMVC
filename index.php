@@ -69,6 +69,32 @@ require("../../../other/blogs_config.php");
         
         echo Template::instance()->render('pages/aboutus.html');
     });
+    
+    $f3->route('GET /@username', function($f3,$params)
+    {
+        $user_name = $params['username'];
+        $db = new Database();
+        //$user = $db->getSingleUserProfile(1);
+        //$user = new User(null, null, null, null);
+        $user = $db->getUserFromUserName($user_name);
+        $BlogPosts = $db->getUsersBlogPosts($user->getUserID());
+        if($BlogPosts == null || $BlogPosts[0] == null)
+        {
+            $f3->set('hasPosts', 'false');
+        }
+        else
+        {
+            $f3->set('hasPosts', 'true');
+        }
+        $f3->set('PageTitle', $user_name . ' Blog');
+        $f3->set('loggedIn', 'false');
+        $f3->set('_user', $user);
+        $f3->set('posts', $BlogPosts);
+        $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+        
+        echo Template::instance()->render('pages/blog.html');
+    });
+
 
     //Run fat free
     $f3->run();

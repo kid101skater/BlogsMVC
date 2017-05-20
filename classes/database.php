@@ -22,5 +22,93 @@ function getUsersPostCount($userID)
         $total = $statement->rowCount();
    
         return $total;
-    }
 }
+
+function GetUserFromID($id)
+{
+        try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+        $sql = "SELECT * FROM Users WHERE UserID = :id";
+        $statement = $dbh->prepare($sql);
+        $statement->bindParam(':id', $id, PDO::PARAM_STR);
+        $row = $statement->fetchObject();
+        $userID = $row->UserID;
+        $userName = $row->Username;
+        $bio = $row->Bio;
+        $profilePic = $row->ProfilePic;
+        $statement->debugDumpParams();
+        $User = new User($userID, $userName, $bio, $profilePic);
+        return $User;
+}
+
+function getUserFromUserName($uName)
+{
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+        $sql = "SELECT * FROM Users WHERE Username = :username";
+        
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':username', $uName, PDO::PARAM_STR);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        foreach($result as $row){
+        $userName = $row['Username'];
+        $userID = $row['UserID'];
+        $bio = $row['Bio'];
+        $profilePic = $row['ProfilePic'];;
+        }
+        $User = new User($userID, $userName, $bio, $profilePic);
+        return $User;
+}
+
+function getUsersBlogPosts($userID)
+{
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+        $sql = "SELECT Users.UserID, Users.Username, Users.Bio, Users.ProfilePic,Posts.PostID, Posts.Title, Posts.PostData, Posts.Excerpt, Posts.PostDate FROM Users, Posts NATURAL JOIN User_Posts_JT WHERE User_Posts_JT.jt_UserID = Users.UserID AND User_Posts_JT.jt_PostID = Posts.PostID AND Users.UserID = :userID ORDER BY Posts.PostID DESC";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':userID', $userID, PDO::PARAM_STR);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        
+        $BlogPosts[] = new BlogPosts(null, null, null, null, null);
+        $counter = 0;
+        foreach($result as $row){
+            $PostID = $row['PostID'];
+            $Title = $row['Title'];
+            $PostData = $row['PostData'];
+            $Excerpt= $row['Excerpt'];
+            $PostDate = $row['PostDate'];
+            $BlogPosts[$counter] = new BlogPosts($PostID, $Title, $Excerpt, $PostData, $PostDate);
+            $counter = $counter + 1;
+        }
+        
+        if($counter == 0)
+        {
+            return null;
+        }
+        return $BlogPosts;
+}
+}
+?>
