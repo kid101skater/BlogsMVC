@@ -10,6 +10,12 @@
     //Default route
     $f3->route('GET /', function($f3) {
         
+        /* Set the homepage information
+         *  Each blogger has a portrait image, name, a link to their blogs page,
+         *  a count of their blog posts,
+         *  and an excerpt to their most recent blog (if there is any).
+        */
+        
         echo Template::instance()->render('pages/home.html');
         
     });
