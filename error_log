@@ -1,0 +1,17 @@
+[19-May-2017 22:29:14 America/Chicago] Unable to open pages/home.html
+[19-May-2017 22:29:14 America/Chicago] [IT328/BlogsMVC/index.php:19] Preview->render()
+[19-May-2017 22:29:14 America/Chicago] [IT328/BlogsMVC/index.php:24] Base->run()
+[19-May-2017 22:30:14 America/Chicago] syntax error, unexpected '<', expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.213adrjrfkjoo.php:21]
+[19-May-2017 22:30:14 America/Chicago] [IT328/BlogsMVC/index.php:19] Preview->render()
+[19-May-2017 22:30:14 America/Chicago] [IT328/BlogsMVC/index.php:24] Base->run()
+[19-May-2017 22:39:14 America/Chicago] Unable to open pages/home.php
+[19-May-2017 22:39:14 America/Chicago] [IT328/BlogsMVC/index.php:19] Preview->render()
+[19-May-2017 22:39:14 America/Chicago] [IT328/BlogsMVC/index.php:24] Base->run()
+[19-May-2017 22:39:25 America/Chicago] Unable to open pages/SideNav.htm;
+[19-May-2017 22:39:25 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:18] Preview->render()
+[19-May-2017 22:39:25 America/Chicago] [IT328/BlogsMVC/index.php:20] Preview->render()
+[19-May-2017 22:39:25 America/Chicago] [IT328/BlogsMVC/index.php:25] Base->run()
+[19-May-2017 22:39:27 America/Chicago] Unable to open pages/SideNav.htm;
+[19-May-2017 22:39:27 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:18] Preview->render()
+[19-May-2017 22:39:27 America/Chicago] [IT328/BlogsMVC/index.php:20] Preview->render()
+[19-May-2017 22:39:27 America/Chicago] [IT328/BlogsMVC/index.php:25] Base->run()
