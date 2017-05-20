@@ -33,35 +33,44 @@
                             </div>
                         </div>
                         <br>
-                        <check if="{{ @hasPosts == 'true' }}">
-                        <true>
                         <div class="container-fluid">
-                            <div class="col-sm-8 aboutContainer">
-                                <h3>My Recent blog:</h3>
-                                {{ @posts[0]->getPostData() }}
+                            <div class="col-sm-8">
+                                <check if="{{ @hasPosts == 'true' }}">
+                                    <true>
+                                        <div class="blogContainer">
+                                        <div>
+                                            <h3><a href="{{@BASE}}/Post/{{ @posts[0]->getPostID() }}">My Most Recent blog:</a></h3>
+                                            {{ @posts[0]->getPostData() }}
+                                        </div>
+                                        </div>
+                                        <br>
+                                        <div class="blogContainer">
+                                            <p>My Blogs:</p>
+                                            <!-- start blogs loop at 1 so we can skip the latest posted above -->
+                                            <loop from="{{ @i=1 }}" to="{{ @i < count(@posts) }}" step="{{ @i++ }}">
+                                            <a href="{{@BASE}}/Post/{{ @posts[@i]->getPostID() }}">{{ @posts[@i]->getPostTitle() }}</a> - word count {{ @posts[@i]->getPostWordCount }} {{ @posts[@i]->getPostDate()}}
+                                            <hr class="about">
+                                            {{ @posts[@i]->getPostExcerpt() }}<br/>
+                                            </loop>
+                                        </div>
+                                    </true>
+                                    <false>
+                                        <div class="col-sm-8 blogContainer">
+                                            <p>{{ @_user->getUserName() }} Does not have any blog posts to show :( </p>
+                                        </div>
+                                    </false>
+                                </check>
                             </div>
-                        </div>
-                            <br>
-                        <div class="container-fluid">
-                            <div class="col-sm-8 aboutContainer">
-                                <p>My Blogs:</p>
-                                <!-- start blogs loop at 1 so we can skip the latest posted above -->
-                                <loop from="{{ @i=1 }}" to="{{ @i < count(@posts) }}" step="{{ @i++ }}">
-                                    <a href="{{@BASE}}/Post/{{ @posts[@i]->getPostID() }}">{{ @posts[@i]->getPostTitle() }}</a> - word count {{ @posts[@i]->getPostWordCount }} {{ @posts[@i]->getPostDate()}}
-                                    <hr class="about">
-                                    {{ @posts[@i]->getPostExcerpt() }}<br/>
-                                </loop>
+                            <div class="col-sm-4">
+                                    <center><img src="profilephotos/{{@_user->getProfilePic() }}" class="img-responsive" alt="Profile Pic"></center>
+                                    <div class="aboutContent">
+                                        <center>{{@_user->getUserName()}}</center>
+                                        <hr class="about">
+                                        Bio: {{@_user->getBio()}}
+                                        </div>
                             </div>
-                        </true>
-                        <false>
-                            <div class="col-sm-8 aboutContainer">
-                                <p>{{ @_user->getUserName() }} Does not have any blog posts to show :( </p>
-                            </div>
-                        </false>
-                        </check>
-                            <div class="col-sm-2">
-                                <img src="profilephotos/{{@_user->getProfilePic() }}">
-                            </div>
+                            
+                            
                         </div>
             </div>
         </div>

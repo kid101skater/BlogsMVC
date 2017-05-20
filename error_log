@@ -411,3 +411,18 @@
 [20-May-2017 06:47:16 America/Chicago] [IT328/BlogsMVC/index.php:114] Base->run()
 [20-May-2017 06:51:30 America/Chicago] HTTP 404 (GET /Posts/1)
 [20-May-2017 06:51:30 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[20-May-2017 07:09:38 America/Chicago] syntax error, unexpected '{' [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:65]
+[20-May-2017 07:09:38 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 07:09:38 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[20-May-2017 07:18:59 America/Chicago] Call to a member function getPostID() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:42]
+[20-May-2017 07:18:59 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 07:18:59 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[20-May-2017 07:19:02 America/Chicago] Call to a member function getPostID() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:42]
+[20-May-2017 07:19:02 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 07:19:02 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[20-May-2017 07:20:10 America/Chicago] Call to a member function getPostID() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:42]
+[20-May-2017 07:20:10 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 07:20:10 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[20-May-2017 07:20:38 America/Chicago] Call to a member function getPostID() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:42]
+[20-May-2017 07:20:38 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
+[20-May-2017 07:20:38 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()

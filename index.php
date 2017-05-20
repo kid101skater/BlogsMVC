@@ -70,6 +70,15 @@ require("../../../other/blogs_config.php");
         echo Template::instance()->render('pages/aboutus.html');
     });
     
+    $f3->route('GET /Login', function($f3)
+    {
+        $f3->set('PageTitle', 'Login');
+        $f3->set('loggedIn', 'false');
+        $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+        
+        echo Template::instance()->render('pages/login.html');
+    });
+    
     $f3->route('GET /@username', function($f3,$params)
     {
         $user_name = $params['username'];
