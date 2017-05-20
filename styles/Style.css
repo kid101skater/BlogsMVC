@@ -15,3 +15,36 @@ ul.side_nav_ul
 {
     padding-left: 5px;
 }
+
+div.aboutContainer
+{
+    background-color: #ebebeb;
+    font-size: 150%;
+    position: relative;
+}
+div.aboutHeader
+{
+    position: absolute;
+    top: 50%;
+    left:20%;
+    margin-top: 10px;
+}
+
+div.aboutContent
+{
+    background-color: #ebebeb;
+    position: relative;
+}
+
+hr.about
+{
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+p.aboutTitle
+{
+    font-size: 200%;
+}

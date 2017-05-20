@@ -20,6 +20,7 @@ require("../../../other/config.php");
     
     //Default route
     $f3->route('GET /', function($f3) {
+        $f3->set('PageTitle', "Blogs");
         $f3->set('loggedIn', 'false');
         
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
@@ -31,6 +32,15 @@ require("../../../other/config.php");
         
         echo Template::instance()->render('pages/home.html');
         
+    });
+    
+    $f3->route('GET /About', function($f3)
+    {
+        $f3->set('PageTitle', 'About Us');
+        $f3->set('loggedIn', 'false');
+        $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+        
+        echo Template::instance()->render('pages/aboutus.html');
     });
 
     //Run fat free

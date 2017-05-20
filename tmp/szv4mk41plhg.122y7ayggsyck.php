@@ -20,7 +20,7 @@
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3 side_nav">
                 <?php echo $this->render($sidenav,NULL,get_defined_vars(),0); ?> 
             </div>
             <div class="col-sm-9">

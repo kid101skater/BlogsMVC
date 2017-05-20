@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><?= $PageTitle ?></title>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <!-- Custom style sheet -->
+        <link rel="stylesheet" href="styles/Style.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+    </head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <?php echo $this->render($sidenav,NULL,get_defined_vars(),0); ?> 
+            </div>
+            <div class="col-sm-7">
+                <!-- show about section -->
+                <div class="aboutContainer">
+                        <div class="container-fluid">
+                            <div class="col-sm-9">
+                                <div class="aboutHeader">
+                                    <p class="aboutTitle">The Blog Site</p>
+                                    <small>Your one stop shop for internet blogs</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="images/blog_logo.png" class="img-responsive" alt="blog site logo">
+                            </div>
+                        </div>
+                </div>
+                        <br>
+                <!-- Show content below header -->
+                <div class="container-fluid aboutContent">
+                    <b>The internet is abuzz about our blog site!</b>
+                    <hr class="about">
+                    Lorem ipsum dolor sit amet, laudem iudicabit consetetur mei ea, elitr exerci id eum. Malis intellegam ea pro, quo ad mediocrem consectetuer. Stet aliquip pro id, quo option atomorum neglegentur ad. Molestie electram ad usu, at per simul propriae. Autem iisque pertinax cu mel.
+
+                    Justo dictas ne nam, omnium discere mei at. Summo nonumy nemore duo ne, ius congue cetero vivendo ut, te pro fabellas evertitur. No latine accusata mei. Vix soleat adipisci convenire ei, tamquam delectus ei has.
+                    <hr class="about">
+                    <b>Here is what others are saying about us</b>
+                    <hr class="about">
+                    <p>"This site has very interesting blogs from many very interesting people" - <b>John Doe</b></p>
+                    <p>"There is no other site quite like this! - <b>Jane Doe</b></p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <!-- spacer -->
+            </div>
+        </div>
+    </div>
+
+</body>
