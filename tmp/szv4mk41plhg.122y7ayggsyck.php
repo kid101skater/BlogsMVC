@@ -20,10 +20,10 @@
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <?php echo $this->render($sidenav,NULL,get_defined_vars(),0); ?> 
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-9">
             <div class="container">
                 <div class="col-sm-2">
             <!-- repeat card layout for each blog -->
