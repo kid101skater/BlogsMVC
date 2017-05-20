@@ -1,0 +1,15 @@
+{
+    "name": "tina/hello",
+    "authors": [
+                {
+                    "name": "Kevin Locke",
+                    "email": "klocke@mail.greenriver.edu"
+            }
+    ],
+    "require": {
+    "bcosca/fatfree-core": "dev-master"
+    },
+        "autoload": {
+        "classmap": ["classes/"]
+    }
+}
