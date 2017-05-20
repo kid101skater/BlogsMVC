@@ -1,9 +1,9 @@
 <center>
     <h2>Blog Site</h3>
 </center>
-<img src="images/trumpet.png" class="img-responsive" alt="blogs nav logo">
+<img src="{{@BASE}}/images/trumpet.png" class="img-responsive" alt="blogs nav logo">
 <ul class="list-unstyled side_nav_ul">
-    <li><bold><a href="./">Home ></a></bold></li>
+    <li><bold><a href="{{@BASE}}/">Home ></a></bold></li>
     <check if="{{ @loggedIn == 'true' }}">
         <true>
             <li><bold><a href="">My Blogs ></a></bold></li>

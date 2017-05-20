@@ -36,6 +36,10 @@ div.aboutHeader
     margin-top: 10px;
 }
 
+div.postHeader
+{
+}
+
 div.aboutContent
 {
     background-color: #ebebeb;
@@ -52,5 +56,5 @@ hr.about
 
 p.aboutTitle
 {
-    font-size: 200%;
+    font-size: 150%;
 }

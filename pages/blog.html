@@ -44,9 +44,12 @@
                             <br>
                         <div class="container-fluid">
                             <div class="col-sm-8 aboutContainer">
+                                <p>My Blogs:</p>
                                 <!-- start blogs loop at 1 so we can skip the latest posted above -->
                                 <loop from="{{ @i=1 }}" to="{{ @i < count(@posts) }}" step="{{ @i++ }}">
-                                    {{ @posts[@i]->getPostData() }}<br/>
+                                    <a href="{{@BASE}}/Post/{{ @posts[@i]->getPostID() }}">{{ @posts[@i]->getPostTitle() }}</a> - word count {{ @posts[@i]->getPostWordCount }} {{ @posts[@i]->getPostDate()}}
+                                    <hr class="about">
+                                    {{ @posts[@i]->getPostExcerpt() }}<br/>
                                 </loop>
                             </div>
                         </true>

@@ -44,12 +44,14 @@
                             <br>
                         <div class="container-fluid">
                             <div class="col-sm-8 aboutContainer">
+                                <p>My Blogs:</p>
                                 <!-- start blogs loop at 1 so we can skip the latest posted above -->
                                 <?php for ($i=1;$i < count($posts);$i++): ?>
-                                    <?= $posts[$i]->getPostData() ?><br/>
+                                    <a href="<?= $BASE ?>/Post/<?= $posts[$i]->getPostID() ?>"><?= $posts[$i]->getPostTitle() ?></a> - word count <?= $posts[$i]->getPostWordCount ?> <?= $posts[$i]->getPostDate().PHP_EOL ?>
+                                    <hr class="about">
+                                    <?= $posts[$i]->getPostExcerpt() ?><br/>
                                 <?php endfor; ?>
                             </div>
-
                         
                         <?php else: ?>
                             <div class="col-sm-8 aboutContainer">

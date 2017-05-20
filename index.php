@@ -95,7 +95,20 @@ require("../../../other/blogs_config.php");
         echo Template::instance()->render('pages/blog.html');
     });
 
-
+    $f3->route('GET /Post/@postID', function($f3,$params)
+    {
+        $postID = $params['postID'];
+        $db = new Database();
+        $BlogPosts = $db->getBlogPostFromID($postID);
+        $User = $db->getUserFromBlogPost($postID);
+        $f3->set('PageTitle', $BlogPosts->getPostTitle());
+        $f3->set('post', $BlogPosts);
+        $f3->set('user', $User);
+        $f3->set('loggedIn', 'false');
+        $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+        
+        echo Template::instance()->render('pages/post.html');
+    });
     //Run fat free
     $f3->run();
     

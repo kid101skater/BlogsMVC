@@ -21,6 +21,11 @@ class BlogPosts
         return $this->PostID;
     }
     
+    function getPostWordCount()
+    {
+        return str_word_count($this->PostData);
+    }
+    
     function getPostTitle()
     {
         return $this->PostTitle;
