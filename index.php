@@ -20,42 +20,17 @@ require("../../../other/blogs_config.php");
     
     //Default route
     $f3->route('GET|POST /', function($f3) {
-    try
-    {
-        // get the db obj
-        $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-    }
-    catch(PDOException $e)
-    {
-        echo $e->getMessage();
-    }
-    $sql = "SELECT Users.UserID, Users.Username, Users.Bio, Users.ProfilePic,MAX(Posts.PostID), Posts.Title, Posts.Excerpt, Posts.PostDate FROM Users, Posts NATURAL JOIN User_Posts_JT WHERE User_Posts_JT.jt_UserID = Users.UserID AND User_Posts_JT.jt_PostID = Posts.PostID GROUP BY Users.UserID";
-
-    $stmt = $dbh->prepare($sql);
-    $stmt->execute();
-    $result = $stmt->fetchAll();
-
-    $users[] = new HomePageUser(null, null, null, null, null, null, null, null);
-    $counter = 0;
-    foreach($result as $row)
-    {
-        //$UserID, $UserName, $Bio, $ProfilePic, $PostID, $PostTitle, $PostData, $PostDate
-        $users[$counter] = new HomePageUser($row['UserID'], $row['Username'], $row['Bio'], $row['ProfilePic'], $row['PostID'], $row['Title'], $row['Excerpt'], $row['PostDate']);
-        //print_r($row);
-        $counter = $counter + 1;
-    }
         
+        $db = new Database();
+        $users = $db->getUsersWithPosts();
+        $users_noposts = $db->getUsersWithoutPosts();
         $f3->set('PageTitle', "Blogs");
         $f3->set('loggedIn', $_SESSION['username']);
         
         $f3->set('users', $users);
+        $f3->set('noPostUsers', $users_noposts);
         
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
-        /* Set the homepage information
-         *  Each blogger has a portrait image, name, a link to their blogs page,
-         *  a count of their blog posts,
-         *  and an excerpt to their most recent blog (if there is any).
-        */
         
         echo Template::instance()->render('pages/home.html');
         
@@ -95,9 +70,38 @@ require("../../../other/blogs_config.php");
                 $f3->reroute('/');
               });
     
-    $f3->route('GET|POST /Register', function($f3)
+    $f3->route('GET|POST|PUT /Register', function($f3)
     {
+        $db = new Database();
+        if(isset($_POST['user']) and isset($_POST['email']) and isset($_POST['pword']) and isset($_POST['verify']))
+        {
+            if($_POST['pword'] === $_POST['verify'] && $_POST['pword'] !== null && $_POST['pword'] !== '')
+            {
+                if(isset($_FILES["fileToUpload"]))
+                       {
+                    $pic = $_FILES["fileToUpload"]["name"];
+                    $target_dir = "profilephotos/";
+                    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+
+                     }
+                       }
+                       else
+                       {
+                        $pic = "profile_default.png";
+                       }
+                $db->RegisterUser($_POST['user'], $_POST['pword'], $_POST['email'], $_POST['bio'], $pic);
+                $_SESSION['username'] = $_POST['user'];
+                $f3->reroute('/');
+            }
+        }
         $f3->set('PageTitle', 'Become a blogger');
+        $f3->set('Username', $_POST['user']);
+        $f3->set('Email', $_POST['email']);
+        $f3->set('Password', $_POST['pword']);
+        $f3->set('Verify', $_POST['verify']);
+        $f3->set('Pic', $_POST['fileToUpload']);
+        $f3->set('Bio', $_POST['bio']);
         $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
         

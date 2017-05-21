@@ -434,3 +434,32 @@
 [21-May-2017 13:41:27 America/Chicago] PHP Parse error:  syntax error, unexpected '"got here"' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
 [21-May-2017 13:41:43 America/Chicago] PHP Parse error:  syntax error, unexpected '"got here"' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
 [21-May-2017 13:42:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'here' (T_STRING), expecting ',' or ';' in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
+[21-May-2017 17:47:38 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 112
+[21-May-2017 17:56:09 America/Chicago] move_uploaded_file(../profilephotos/myAvatar.png): failed to open stream: No such file or directory
+[21-May-2017 17:56:09 America/Chicago] [IT328/BlogsMVC/index.php:131] move_uploaded_file()
+[21-May-2017 17:56:09 America/Chicago] [IT328/BlogsMVC/index.php:196] Base->run()
+[21-May-2017 18:24:57 America/Chicago] Call to undefined method Database::getUsersWithPosts() [/home/klocke/public_html/IT328/BlogsMVC/index.php:25]
+[21-May-2017 18:24:57 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:25:17 America/Chicago] Call to undefined method Database::getUsersWithPosts() [/home/klocke/public_html/IT328/BlogsMVC/index.php:25]
+[21-May-2017 18:25:17 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:25:43 America/Chicago] Invalid argument supplied for foreach()
+[21-May-2017 18:25:43 America/Chicago] [IT328/BlogsMVC/classes/database.php:73] Base->{closure}()
+[21-May-2017 18:25:43 America/Chicago] [IT328/BlogsMVC/index.php:26] Database->getUsersWithoutPosts()
+[21-May-2017 18:25:43 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:25:45 America/Chicago] Invalid argument supplied for foreach()
+[21-May-2017 18:25:45 America/Chicago] [IT328/BlogsMVC/classes/database.php:73] Base->{closure}()
+[21-May-2017 18:25:45 America/Chicago] [IT328/BlogsMVC/index.php:26] Database->getUsersWithoutPosts()
+[21-May-2017 18:25:45 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:28:14 America/Chicago] Invalid argument supplied for foreach()
+[21-May-2017 18:28:14 America/Chicago] [IT328/BlogsMVC/classes/database.php:73] Base->{closure}()
+[21-May-2017 18:28:14 America/Chicago] [IT328/BlogsMVC/index.php:26] Database->getUsersWithoutPosts()
+[21-May-2017 18:28:14 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:28:43 America/Chicago] Call to a member function fetchAll() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:71]
+[21-May-2017 18:28:43 America/Chicago] [IT328/BlogsMVC/index.php:26] Database->getUsersWithoutPosts()
+[21-May-2017 18:28:43 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:28:45 America/Chicago] Call to a member function fetchAll() on null [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:71]
+[21-May-2017 18:28:45 America/Chicago] [IT328/BlogsMVC/index.php:26] Database->getUsersWithoutPosts()
+[21-May-2017 18:28:45 America/Chicago] [IT328/BlogsMVC/index.php:150] Base->run()
+[21-May-2017 18:35:40 America/Chicago] Call to undefined method User::getPostCount() [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:51]
+[21-May-2017 18:35:40 America/Chicago] [IT328/BlogsMVC/index.php:35] Preview->render()
+[21-May-2017 18:35:40 America/Chicago] [IT328/BlogsMVC/index.php:151] Base->run()

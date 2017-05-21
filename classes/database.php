@@ -24,6 +24,66 @@ function getUsersPostCount($userID)
         return $total;
 }
 
+function getUsersWithPosts()
+{
+    try
+    {
+        // get the db obj
+        $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+    }
+    catch(PDOException $e)
+    {
+        echo $e->getMessage();
+    }
+    $sql = "SELECT Users.UserID, Users.Username, Users.Bio, Users.ProfilePic,MAX(Posts.PostID), Posts.Title, Posts.Excerpt, Posts.PostDate FROM Users, Posts NATURAL JOIN User_Posts_JT WHERE User_Posts_JT.jt_UserID = Users.UserID AND User_Posts_JT.jt_PostID = Posts.PostID GROUP BY Users.UserID";
+
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+
+    $users[] = new HomePageUser(null, null, null, null, null, null, null, null);
+    $counter = 0;
+    foreach($result as $row)
+    {
+        //$UserID, $UserName, $Bio, $ProfilePic, $PostID, $PostTitle, $PostData, $PostDate
+        $users[$counter] = new HomePageUser($row['UserID'], $row['Username'], $row['Bio'], $row['ProfilePic'], $row['PostID'], $row['Title'], $row['Excerpt'], $row['PostDate']);
+        //print_r($row);
+        $counter = $counter + 1;
+    }
+    
+    return $users;
+}
+
+function getUsersWithoutPosts()
+{
+        try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+    $sql = "SELECT Users.UserID, Users.Username, Users.Bio, Users.ProfilePic FROM Users WHERE Users.UserID NOT IN (SELECT User_Posts_JT.jt_UserID FROM User_Posts_JT)";
+    $statement = $dbh->prepare($sql);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $Users[] = new User(null, null, null, null);
+        $counter = 0;
+    foreach($result as $row){
+        $userName = $row['Username'];
+        $userID = $row['UserID'];
+        $bio = $row['Bio'];
+        $profilePic = $row['ProfilePic'];
+        $Users[$counter] = new User($userID, $userName, $bio, $profilePic);
+        $counter = $counter + 1;
+        }
+        
+        return $Users;
+        
+}
+
 function GetUserFromID($id)
 {
         try
@@ -197,6 +257,27 @@ function Authenticate($user, $password)
 
         return $stmt->rowCount(); //  if 1 then we are authenticated
         
+}
+
+function RegisterUser($user, $password, $email, $bio, $pic)
+{
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+    $sql = "INSERT INTO `klocke_Blogs`.`Users` (`Username`, `Password`, `Email`, `Bio`, `ProfilePic`) VALUES (:username, :password, :email, :bio, :pic);";
+    $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':username', $user, PDO::PARAM_STR);
+        $stmt->bindParam(':password', $password, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':bio', $bio, PDO::PARAM_STR);
+        $stmt->bindParam(':pic', $pic, PDO::PARAM_STR);
+        $stmt->execute();
 }
 }
 ?>

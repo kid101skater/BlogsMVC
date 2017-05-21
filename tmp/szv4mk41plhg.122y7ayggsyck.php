@@ -24,10 +24,10 @@
                 <?php echo $this->render($sidenav,NULL,get_defined_vars(),0); ?> 
             </div>
             <div class="col-sm-9">
-            <div class="container">
+            <div class="col-sm-9 container">
             <!-- repeat card layout for each blog -->
             <?php foreach (($users?:[]) as $user): ?>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="card homeBlogCards">
                     <img class="card-img-top img-responsive" src="<?= './profilephotos/'.$user->getProfilePic() ?>" alt="Users Profile">
                         <div class="card-block">
@@ -41,7 +41,21 @@
                 </div>
             </div>
             <?php endforeach; ?>
-                
+            <?php foreach (($noPostUsers?:[]) as $user_p): ?>
+                <div class="col-sm-4">
+                <div class="card homeBlogCards">
+                    <img class="card-img-top img-responsive" src="<?= './profilephotos/'.$user_p->getProfilePic() ?>" alt="Users Profile">
+                        <div class="card-block">
+                            <h4 class="card-title"><center><?= $user_p->getUserName() ?></center></h4>
+                            <hr>
+                                <p class="card-text"><center><a href="<?= './'.$user_p->getUserName() ?>">View Blogs</a> - Total: 0</center></p>
+                            <hr>
+                                <span>This user does not have any posts!</span>
+                                </p>
+                        </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
             </div>
             </div>
         </div>

@@ -62,7 +62,7 @@
                 
                 <?php else: ?>
                     <div class="container-fluid aboutContent">
-                        Weclome back <?= @ loggedIn.PHP_EOL ?>
+                        Weclome back <?= $loggedIn.PHP_EOL ?>
                     </div>
                 
                         <?php endif; ?>

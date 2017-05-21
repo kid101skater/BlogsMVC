@@ -42,28 +42,28 @@
                 <!-- Show content below header -->
                 <div class="container-fluid aboutContent">
                     <center>
-                        <form class="form-inline">
+                        <form class="form-inline" method="POST" enctype="multipart/form-data">
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <div class="register-left">
                                     <label for="user">Username</label>
-                                    <input type="text" id="user" class="">
+                                    <input type="text" id="user" name="user" class="" value="{{@Username}}">
                                     <br>
                                     <label for="email">Email</label>
-                                    <input type="text" id="email" class="">
+                                    <input type="text" id="email" name="email" class="" value="{{@Email}}">
                                 </div>
                                      
                                 <div class="register-left">
                                     <label for="pword">Password</label>
-                                    <input type="password" id="pword" class=""><br>
+                                    <input type="password" id="pword" name="pword" class="" value="{{@Password}}"><br>
                                     <label for="verify">Verify</label>
-                                    <input type="password" id="verify" class="">
+                                    <input type="password" id="verify" name="verify" class="" value="{{@Password}}">
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                                <input type="file" name="fileToUpload" id="fileToUpload""><br>
                                 <center>Quick Bio</center>
-                                <textarea name="bio" class="registerbio" rows="4" form="usrform">Enter text here...</textarea>
+                                <textarea name="bio" class="registerbio" rows="4" name="bio">{{@Bio}}</textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Register</button>
