@@ -177,5 +177,26 @@ function getUserFromBlogPost($postID)
         
         return $user;
 }
+
+function Authenticate($user, $password)
+{
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+        $sql = "SELECT * FROM `Users` WHERE Username = :user AND Password = :password";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':user', $user, PDO::PARAM_STR);
+        $stmt->bindParam(':password', $password, PDO::PARAM_STR);
+        $stmt->execute();
+
+        return $stmt->rowCount(); //  if 1 then we are authenticated
+        
+}
 }
 ?>

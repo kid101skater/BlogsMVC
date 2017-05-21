@@ -39,17 +39,19 @@
                         </div>
                 </div>
                         <br>
+                        <?php if ($loggedIn === null): ?>
+                
                 <!-- Show content below header -->
                 <div class="container-fluid aboutContent">
                     <center>
                     <div class="login">
-                    <form class="form-inline">
+                    <form class="form-inline" method="POST">
                         <div class="form-group">
                             <label for="user">Username</label>
-                            <input type="text" id="user" class="form-control mx-sm-3">
+                            <input type="text" id="user" name="user" class="form-control mx-sm-3">
                             <br>
                             <label for="pword">Password</label>
-                            <input type="password" id="pword" class="form-control mx-sm-3">
+                            <input type="password" id="pword" name="pword" class="form-control mx-sm-3">
                             <br><br><br>
                             <button type="submit" class="btn btn-primary">Login!</button>
                         </div>
@@ -57,6 +59,13 @@
                     </div>
                     </center>
                 </div>
+                
+                <?php else: ?>
+                    <div class="container-fluid aboutContent">
+                        Weclome back <?= @ loggedIn.PHP_EOL ?>
+                    </div>
+                
+                        <?php endif; ?>
             </div>
             <div class="col-sm-2">
                 <!-- spacer -->

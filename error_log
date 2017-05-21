@@ -426,3 +426,11 @@
 [20-May-2017 07:20:38 America/Chicago] Call to a member function getPostID() on null [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.2tz9niblli2o4.php:42]
 [20-May-2017 07:20:38 America/Chicago] [IT328/BlogsMVC/index.php:95] Preview->render()
 [20-May-2017 07:20:38 America/Chicago] [IT328/BlogsMVC/index.php:113] Base->run()
+[21-May-2017 13:38:43 America/Chicago] syntax error, unexpected '?>', expecting function (T_FUNCTION) [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:207]
+[21-May-2017 13:38:43 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[21-May-2017 13:38:43 America/Chicago] [IT328/BlogsMVC/index.php:83] spl_autoload_call()
+[21-May-2017 13:38:43 America/Chicago] [IT328/BlogsMVC/index.php:152] Base->run()
+[21-May-2017 13:41:24 America/Chicago] PHP Parse error:  syntax error, unexpected '"got here"' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
+[21-May-2017 13:41:27 America/Chicago] PHP Parse error:  syntax error, unexpected '"got here"' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
+[21-May-2017 13:41:43 America/Chicago] PHP Parse error:  syntax error, unexpected '"got here"' (T_CONSTANT_ENCAPSED_STRING) in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92
+[21-May-2017 13:42:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'here' (T_STRING), expecting ',' or ';' in /home/klocke/public_html/IT328/BlogsMVC/index.php on line 92

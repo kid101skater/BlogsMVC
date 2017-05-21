@@ -19,7 +19,7 @@ require("../../../other/blogs_config.php");
     $f3 = Base::instance();
     
     //Default route
-    $f3->route('GET /', function($f3) {
+    $f3->route('GET|POST /', function($f3) {
     try
     {
         // get the db obj
@@ -46,7 +46,7 @@ require("../../../other/blogs_config.php");
     }
         
         $f3->set('PageTitle', "Blogs");
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         
         $f3->set('users', $users);
         
@@ -64,25 +64,41 @@ require("../../../other/blogs_config.php");
     $f3->route('GET /About', function($f3)
     {
         $f3->set('PageTitle', 'About Us');
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
         
         echo Template::instance()->render('pages/aboutus.html');
     });
     
-    $f3->route('GET /Login', function($f3)
+    $f3->route('GET|POST /Login', function($f3)
     {
+        $db = new Database();
+        if (isset($_POST['user']) and isset($_POST['pword']))
+        {
+            $result = $db->Authenticate($_POST['user'], $_POST['pword']);
+            if($result == 1)
+            {
+                $_SESSION['username'] = $_POST['user'];
+            }
+        
+        }
         $f3->set('PageTitle', 'Login');
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
         
         echo Template::instance()->render('pages/login.html');
     });
     
-    $f3->route('GET /Register', function($f3)
+    $f3->route('GET /Logout', function($f3)
+              {
+                session_destroy();
+                $f3->reroute('/');
+              });
+    
+    $f3->route('GET|POST /Register', function($f3)
     {
         $f3->set('PageTitle', 'Become a blogger');
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
         
         echo Template::instance()->render('pages/register.html');
@@ -105,7 +121,7 @@ require("../../../other/blogs_config.php");
             $f3->set('hasPosts', 'true');
         }
         $f3->set('PageTitle', $user_name . ' Blog');
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('_user', $user);
         $f3->set('posts', $BlogPosts);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
@@ -122,7 +138,7 @@ require("../../../other/blogs_config.php");
         $f3->set('PageTitle', $BlogPosts->getPostTitle());
         $f3->set('post', $BlogPosts);
         $f3->set('user', $User);
-        $f3->set('loggedIn', 'false');
+        $f3->set('loggedIn', $_SESSION['username']);
         $f3->set('sidenav','pages/SideNav.html'); // give side nav data
         
         echo Template::instance()->render('pages/post.html');
