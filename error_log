@@ -463,3 +463,13 @@
 [21-May-2017 18:35:40 America/Chicago] Call to undefined method User::getPostCount() [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:51]
 [21-May-2017 18:35:40 America/Chicago] [IT328/BlogsMVC/index.php:35] Preview->render()
 [21-May-2017 18:35:40 America/Chicago] [IT328/BlogsMVC/index.php:151] Base->run()
+[21-May-2017 19:43:22 America/Chicago] syntax error, unexpected '$stmt' (T_VARIABLE) [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:302]
+[21-May-2017 19:43:22 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[21-May-2017 19:43:22 America/Chicago] [IT328/BlogsMVC/index.php:24] spl_autoload_call()
+[21-May-2017 19:43:22 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()
+[21-May-2017 19:44:28 America/Chicago] HTTP 405 (POST /Createblog)
+[21-May-2017 19:44:28 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()
+[21-May-2017 19:44:59 America/Chicago] HTTP 405 (POST /Createblog)
+[21-May-2017 19:44:59 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()
+[21-May-2017 19:45:19 America/Chicago] HTTP 405 (POST /CreateBlog)
+[21-May-2017 19:45:19 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()

@@ -70,6 +70,43 @@ require("../../../other/blogs_config.php");
                 $f3->reroute('/');
               });
     
+    $f3->route('GET|POST /CreateBlog', function($f3)
+               {
+                if($_SESSION['username'] == null)
+                {
+                    $f3->reroute('/Login');
+                }
+                $db = new Database();
+                $user = $db->getUserFromUserName($_SESSION['username']);
+                if(isset($_POST['title']) and isset($_POST['entry']))
+                {
+                    if($_POST['title'] !== '' && $_POST['title'] !== null && $_POST['entry'] !== '' && $_POST['entry'] !== null)
+                    {
+                        $db->CreatePost($_POST['title'], $_POST['entry'], $user->getUserID());
+                        $f3->reroute('/MyBlogs');
+                    }
+                }
+                
+                $f3->set('PageTitle', 'New Post');
+                $f3->set('loggedIn', $_SESSION['username']);
+                $f3->set('title', $_POST['title']);
+                $f3->set('entry', $_POST['entry']);
+                $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+                
+                echo Template::instance()->render('pages/createblog.html');
+               });
+    
+    $f3->route('GET /MyBlogs', function($f3)
+               {
+                $f3->set('PageTitle', 'My Blogs');
+                $f3->set('loggedIn', $_SESSION['username']);
+                $f3->set('title', $_POST['title']);
+                $f3->set('entry', $_POST['entry']);
+                $f3->set('sidenav','pages/SideNav.html'); // give side nav data
+                
+                echo Template::instance()->render('pages/createblog.html');
+               });
+    
     $f3->route('GET|POST|PUT /Register', function($f3)
     {
         $db = new Database();
@@ -112,8 +149,6 @@ require("../../../other/blogs_config.php");
     {
         $user_name = $params['username'];
         $db = new Database();
-        //$user = $db->getSingleUserProfile(1);
-        //$user = new User(null, null, null, null);
         $user = $db->getUserFromUserName($user_name);
         $BlogPosts = $db->getUsersBlogPosts($user->getUserID());
         if($BlogPosts == null || $BlogPosts[0] == null)

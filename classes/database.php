@@ -279,5 +279,35 @@ function RegisterUser($user, $password, $email, $bio, $pic)
         $stmt->bindParam(':pic', $pic, PDO::PARAM_STR);
         $stmt->execute();
 }
+
+function CreatePost($title, $entry, $userID)
+{
+    $excerpt = substr($entry, 0, 100);
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+    $sql = "INSERT INTO `Posts`(`Title`, `PostData`, `Excerpt`) VALUES (:title,:entry,:excerpt)";
+    $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':title', $title, PDO::PARAM_STR);
+        $stmt->bindParam(':entry', $entry, PDO::PARAM_STR);
+        $stmt->bindParam(':excerpt', $excerpt, PDO::PARAM_STR);
+        $stmt->execute();
+        $sql_PostID = "SELECT PostID FROM Posts ORDER BY `PostID` DESC LIMIT 1";
+        $stmt = $dbh->prepare($sql_PostID);
+        $stmt->execute();
+        $row = $stmt->fetch();
+        $postID = $row['PostID'];
+    $sql_JT = "INSERT INTO `User_Posts_JT`(`jt_UserID`, `jt_PostID`) VALUES (:userID, :postID)";
+    $stmt = $dbh->prepare($sql_JT);
+    $stmt->bindParam(':userID', $userID, PDO::PARAM_STR);
+    $stmt->bindParam(':postID', $postID, PDO::PARAM_STR);
+    $stmt->execute();
+}
 }
 ?>

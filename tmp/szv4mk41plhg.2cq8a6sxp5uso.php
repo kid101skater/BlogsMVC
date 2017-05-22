@@ -13,7 +13,7 @@
         
         <?php else: ?>
             <li><bold><a href="">My Blogs ></a></bold></li>
-            <li><bold><a href="#">Create Blog ></a></bold></li>
+            <li><bold><a href="<?= $BASE ?>/CreateBlog">Create Blog ></a></bold></li>
             <li><bold><a href="<?= $BASE ?>/About">About Us ></a></bold></li>
             <li><bold><a href="<?= $BASE ?>/Logout">Log Out ></a></bold></li>
         

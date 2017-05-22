@@ -13,7 +13,7 @@ CREATE TABLE Users (
 );
 
 CREATE TABLE Posts (
-  PostID int(11) NOT NULL,
+  PostID int(11) NOT NULL AUTO_INCREMENT,
   Title varchar(125),
   PostData text,
   PostDate timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
