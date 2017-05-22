@@ -82,15 +82,33 @@ require("../../../other/blogs_config.php");
                 {
                     if($_POST['title'] !== '' && $_POST['title'] !== null && $_POST['entry'] !== '' && $_POST['entry'] !== null)
                     {
-                        $db->CreatePost($_POST['title'], $_POST['entry'], $user->getUserID());
+                        if($_POST['postID'] === null)
+                        {
+                            $db->CreatePost($_POST['title'], $_POST['entry'], $user->getUserID());
+                        }
+                        else
+                        {
+                            $db->UpdatePost($_POST['postID'], $_POST['title'], $_POST['entry']);
+                        }
                         $f3->reroute('/MyBlogs');
                     }
+                }
+                $title = $_POST['title'];
+                $entry = $_POST['entry'];
+                if($_SESSION['PostID'] !== null)
+                {
+                    $post = $db->getBlogPostFromID($_SESSION['PostID']);
+                    $title = $post->getPostTitle();
+                    $entry = $post->getPostData();
+                    $postID = $_SESSION['PostID'];
+                    $_SESSION['PostID'] = null;
                 }
                 
                 $f3->set('PageTitle', 'New Post');
                 $f3->set('loggedIn', $_SESSION['username']);
-                $f3->set('title', $_POST['title']);
-                $f3->set('entry', $_POST['entry']);
+                $f3->set('title', $title);
+                $f3->set('entry', $entry);
+                $f3->set('postID', $postID);
                 $f3->set('sidenav','pages/SideNav.html'); // give side nav data
                 
                 echo Template::instance()->render('pages/createblog.html');
@@ -98,13 +116,32 @@ require("../../../other/blogs_config.php");
     
     $f3->route('GET /MyBlogs', function($f3)
                {
+                $db = new Database();
+                $user = $db->getUserFromUserName($_SESSION['username']);
+                $BlogPosts = $db->getUsersBlogPosts($user->getUserID());
                 $f3->set('PageTitle', 'My Blogs');
                 $f3->set('loggedIn', $_SESSION['username']);
-                $f3->set('title', $_POST['title']);
-                $f3->set('entry', $_POST['entry']);
+                $f3->set('Posts', $BlogPosts);
                 $f3->set('sidenav','pages/SideNav.html'); // give side nav data
                 
-                echo Template::instance()->render('pages/createblog.html');
+                echo Template::instance()->render('pages/myblogs.html');
+               });
+    
+    $f3->route('GET /Delete/@blogID', function($f3, $params)
+               {
+                $blogID = $params['blogID'];
+                $db = new Database();
+                $user = $db->getUserFromUserName($_SESSION['username']);
+                $db->DeletePost($blogID, $user->getUserID());
+                $f3->reroute('../MyBlogs');
+               });
+    
+    $f3->route('GET /Update/@postID', function($f3, $params)
+               {
+                $postID= $params['postID'];
+                $db = new Database();
+                $_SESSION['PostID'] = $postID;
+                $f3->reroute('../CreateBlog');
                });
     
     $f3->route('GET|POST|PUT /Register', function($f3)

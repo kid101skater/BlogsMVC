@@ -53,6 +53,25 @@ function getUsersWithPosts()
     
     return $users;
 }
+function getLatestExcerpt($userID)
+{
+    try
+    {
+        // get the db obj
+        $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+    }
+    catch(PDOException $e)
+    {
+        echo $e->getMessage();
+    }
+    $sql = "SELECT Posts.Excerpt FROM Posts WHERE Posts.PostID = (SELECT MAX(User_Posts_JT.jt_PostID) FROM User_Posts_JT WHERE User_Posts_JT.jt_UserID = :userID )";
+    $statement = $dbh->prepare($sql);
+    $statement->bindParam(':userID', $userID, PDO::PARAM_STR);
+    $statement->execute();
+    $row = $statement->fetch();
+        return $row['Excerpt'];   
+
+}
 
 function getUsersWithoutPosts()
 {
@@ -307,6 +326,45 @@ function CreatePost($title, $entry, $userID)
     $stmt = $dbh->prepare($sql_JT);
     $stmt->bindParam(':userID', $userID, PDO::PARAM_STR);
     $stmt->bindParam(':postID', $postID, PDO::PARAM_STR);
+    $stmt->execute();
+}
+
+function UpdatePost($postID, $title, $entry)
+{
+    $excerpt = substr($entry, 0, 100);
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+        $sql = "UPDATE Posts SET PostID = :postid, Title = :title, PostData = :entry, Excerpt = :excerpt WHERE PostID = :postid";
+            $stmt = $dbh->prepare($sql);
+        $stmt->bindParam(':postid', $postID, PDO::PARAM_STR);
+        $stmt->bindParam(':title', $title, PDO::PARAM_STR);
+        $stmt->bindParam(':entry', $entry, PDO::PARAM_STR);
+        $stmt->bindParam(':excerpt', $excerpt, PDO::PARAM_STR);
+        $stmt->execute();
+}
+
+function DeletePost($PostID, $UserID)
+{
+    try
+        {
+            // get the db obj
+            $dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        }
+        catch(PDOException $e)
+        {
+             echo $e->getMessage();
+        }
+    $sql = "DELETE FROM `klocke_Blogs`.`Posts` WHERE `Posts`.`PostID` = :postID; DELETE FROM `klocke_Blogs`.`User_Posts_JT` WHERE `User_Posts_JT`.`jt_UserID` = :userID AND `User_Posts_JT`.`jt_PostID` = :postID";
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindParam(':userID', $UserID, PDO::PARAM_STR);
+    $stmt->bindParam(':postID', $PostID, PDO::PARAM_STR);
     $stmt->execute();
 }
 }

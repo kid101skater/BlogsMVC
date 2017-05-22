@@ -54,7 +54,8 @@ class HomePageUser
     
     function getPostExcerpt()
     {
-        return $this->Excerpt;
+        $db = new Database();
+        return $db->getLatestExcerpt($this->getUserID());
     }
     
     function getPostDate()

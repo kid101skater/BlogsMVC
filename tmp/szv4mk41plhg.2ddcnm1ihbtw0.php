@@ -29,39 +29,35 @@
                         <div class="container-fluid">
                             <div class="col-sm-9">
                                 <div class="aboutHeader">
-                                    <?php if ($postID === null): ?>
-                                        
-                                    <p class="aboutTitle">What's on your mind?</p>
-                                        
-                                        <?php else: ?><p class="aboutTitle">Change your mind?</p>
-                                        <?php endif; ?>
-                                        
+                                    <p class="aboutTitle">My Blogs</p>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <img src="images/writing.png" class="img-responsive" alt="blog writing logo">
+                                <img src="images/user.png" class="img-responsive" alt="blog user logo">
                             </div>
                         </div>
                 </div>
                         <br>
                 <!-- Show content below header -->
-                <div class="container-fluid aboutContent">
-                    <form class="form-inline" method="POST">
-                            <div class="col-sm-1">
-                            <label for="title">Title</label>
-                            </div>
-                            <div class="col-sm-11">
-                            <input type="text" id="title" style="width:100%" name="title" value="<?= $title ?>" class="form-control">
-                            </div>
-                            <br>
-                            <center>Post Content:</center>
-                            <textarea class="form-control" style="width:100%" rows="8" id="entry" name="entry"><?= $entry ?></textarea>
-                            <br><br><br>
-                            <input type="text" id="postID" name="postID" value="<?= $postID ?>" hidden>
-                            <center>
-                            <button type="submit" class="btn btn-primary">Post</button>
-                            </center>
-                    </form>
+                <div class="container-fluid aboutContent .table-responsive">
+                    <table class="table">
+    <thead>
+      <tr>
+        <th>Blog</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+        <?php foreach (($Posts?:[]) as $post): ?>
+      <tr>
+        <td><?= $post->getPostTitle() ?></td>
+        <td><a href="Update/<?= $post->getPostID() ?>"><span class="glyphicon glyphicon-wrench"></span></a></td>
+        <td><a href="Delete/<?= $post->getPostID() ?>"><span class="glyphicon glyphicon-remove"></span></a></td>
+      </tr>
+        <?php endforeach; ?>
+    </tbody>
+                    </table>
                 </div>
             </div>
             <div class="col-sm-2">

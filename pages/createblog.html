@@ -29,7 +29,13 @@
                         <div class="container-fluid">
                             <div class="col-sm-9">
                                 <div class="aboutHeader">
+                                    <check if="{{ @postID === null }}">
+                                        <true>
                                     <p class="aboutTitle">What's on your mind?</p>
+                                        </true>
+                                        <false><p class="aboutTitle">Change your mind?</p></false>
+                                        </check>
+                                        
                                 </div>
                             </div>
                             <div class="col-sm-3">
@@ -51,6 +57,7 @@
                             <center>Post Content:</center>
                             <textarea class="form-control" style="width:100%" rows="8" id="entry" name="entry">{{@entry}}</textarea>
                             <br><br><br>
+                            <input type="text" id="postID" name="postID" value="{{@postID}}" hidden>
                             <center>
                             <button type="submit" class="btn btn-primary">Post</button>
                             </center>

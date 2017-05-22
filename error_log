@@ -473,3 +473,69 @@
 [21-May-2017 19:44:59 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()
 [21-May-2017 19:45:19 America/Chicago] HTTP 405 (POST /CreateBlog)
 [21-May-2017 19:45:19 America/Chicago] [IT328/BlogsMVC/index.php:169] Base->run()
+[21-May-2017 20:40:11 America/Chicago] Unable to open 
+[21-May-2017 20:40:11 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2ddcnm1ihbtw0.php:24] Preview->render()
+[21-May-2017 20:40:11 America/Chicago] [IT328/BlogsMVC/index.php:114] Preview->render()
+[21-May-2017 20:40:11 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:40:11 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:40:11 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:41:48 America/Chicago] Unable to open 
+[21-May-2017 20:41:48 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2ddcnm1ihbtw0.php:24] Preview->render()
+[21-May-2017 20:41:48 America/Chicago] [IT328/BlogsMVC/index.php:114] Preview->render()
+[21-May-2017 20:41:48 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:41:48 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:41:48 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:42:33 America/Chicago] Unable to open 
+[21-May-2017 20:42:33 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.2ddcnm1ihbtw0.php:24] Preview->render()
+[21-May-2017 20:42:33 America/Chicago] [IT328/BlogsMVC/index.php:114] Preview->render()
+[21-May-2017 20:42:33 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:42:33 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:42:33 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:42:49 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:42:49 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:42:49 America/Chicago] HTTP 404 (GET /Delete/%7B%7B@BASE%7D%7D/MyBlogs)
+[21-May-2017 20:42:49 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:43:12 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:43:12 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:43:14 America/Chicago] HTTP 404 (GET /Delete/styles/Style.css)
+[21-May-2017 20:43:14 America/Chicago] [IT328/BlogsMVC/index.php:193] Base->run()
+[21-May-2017 20:49:53 America/Chicago] Call to a member function getUserFromUserName() on null [/home/klocke/public_html/IT328/BlogsMVC/index.php:115]
+[21-May-2017 20:49:53 America/Chicago] [IT328/BlogsMVC/index.php:197] Base->run()
+[21-May-2017 21:15:42 America/Chicago] syntax error, unexpected 'else' (T_ELSE), expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.1cktnggtb53tk.php:36]
+[21-May-2017 21:15:42 America/Chicago] [IT328/BlogsMVC/index.php:113] Preview->render()
+[21-May-2017 21:15:42 America/Chicago] [IT328/BlogsMVC/index.php:214] Base->run()
+[21-May-2017 21:19:54 America/Chicago] syntax error, unexpected 'else' (T_ELSE), expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.1cktnggtb53tk.php:36]
+[21-May-2017 21:19:54 America/Chicago] [IT328/BlogsMVC/index.php:113] Preview->render()
+[21-May-2017 21:19:54 America/Chicago] [IT328/BlogsMVC/index.php:222] Base->run()
+[21-May-2017 21:21:04 America/Chicago] syntax error, unexpected 'else' (T_ELSE), expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.1cktnggtb53tk.php:36]
+[21-May-2017 21:21:04 America/Chicago] [IT328/BlogsMVC/index.php:113] Preview->render()
+[21-May-2017 21:21:04 America/Chicago] [IT328/BlogsMVC/index.php:222] Base->run()
+[21-May-2017 21:21:08 America/Chicago] syntax error, unexpected 'else' (T_ELSE), expecting end of file [/home/klocke/public_html/IT328/BlogsMVC/tmp/szv4mk41plhg.1cktnggtb53tk.php:36]
+[21-May-2017 21:21:08 America/Chicago] [IT328/BlogsMVC/index.php:113] Preview->render()
+[21-May-2017 21:21:08 America/Chicago] [IT328/BlogsMVC/index.php:222] Base->run()
+[21-May-2017 21:26:44 America/Chicago] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[21-May-2017 21:26:44 America/Chicago] [IT328/BlogsMVC/classes/database.php:330] PDOStatement->execute()
+[21-May-2017 21:26:44 America/Chicago] [IT328/BlogsMVC/index.php:91] Database->UpdatePost()
+[21-May-2017 21:26:44 America/Chicago] [IT328/BlogsMVC/index.php:227] Base->run()
+[21-May-2017 21:29:58 America/Chicago] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[21-May-2017 21:29:58 America/Chicago] [IT328/BlogsMVC/classes/database.php:330] PDOStatement->execute()
+[21-May-2017 21:29:58 America/Chicago] [IT328/BlogsMVC/index.php:93] Database->UpdatePost()
+[21-May-2017 21:29:58 America/Chicago] [IT328/BlogsMVC/index.php:224] Base->run()
+[21-May-2017 21:37:22 America/Chicago] Class 'Database' not found [/home/klocke/public_html/IT328/BlogsMVC/index.php:79]
+[21-May-2017 21:37:22 America/Chicago] [IT328/BlogsMVC/index.php:222] Base->run()
+[21-May-2017 22:07:05 America/Chicago] Call to undefined method Database::getLatestExcerpt() [/home/klocke/public_html/IT328/BlogsMVC/classes/HomePageUser.php:58]
+[21-May-2017 22:07:05 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:38] HomePageUser->getPostExcerpt()
+[21-May-2017 22:07:05 America/Chicago] [IT328/BlogsMVC/index.php:35] Preview->render()
+[21-May-2017 22:07:05 America/Chicago] [IT328/BlogsMVC/index.php:223] Base->run()
+[21-May-2017 22:08:27 America/Chicago] syntax error, unexpected '':us' (T_ENCAPSED_AND_WHITESPACE) [/home/klocke/public_html/IT328/BlogsMVC/classes/database.php:145]
+[21-May-2017 22:08:27 America/Chicago] [IT328/BlogsMVC/vendor/composer/ClassLoader.php:322] Composer\Autoload\includeFile()
+[21-May-2017 22:08:27 America/Chicago] [IT328/BlogsMVC/index.php:24] spl_autoload_call()
+[21-May-2017 22:08:27 America/Chicago] [IT328/BlogsMVC/index.php:223] Base->run()
+[21-May-2017 22:08:55 America/Chicago] Call to undefined function getUserID() [/home/klocke/public_html/IT328/BlogsMVC/classes/HomePageUser.php:58]
+[21-May-2017 22:08:55 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:38] HomePageUser->getPostExcerpt()
+[21-May-2017 22:08:55 America/Chicago] [IT328/BlogsMVC/index.php:35] Preview->render()
+[21-May-2017 22:08:55 America/Chicago] [IT328/BlogsMVC/index.php:223] Base->run()
+[21-May-2017 22:08:56 America/Chicago] Call to undefined function getUserID() [/home/klocke/public_html/IT328/BlogsMVC/classes/HomePageUser.php:58]
+[21-May-2017 22:08:56 America/Chicago] [IT328/BlogsMVC/tmp/szv4mk41plhg.122y7ayggsyck.php:38] HomePageUser->getPostExcerpt()
+[21-May-2017 22:08:56 America/Chicago] [IT328/BlogsMVC/index.php:35] Preview->render()
+[21-May-2017 22:08:56 America/Chicago] [IT328/BlogsMVC/index.php:223] Base->run()

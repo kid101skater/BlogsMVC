@@ -12,7 +12,7 @@
             <li><bold><a href="<?= $BASE ?>/Login">Log In ></a></bold></li>
         
         <?php else: ?>
-            <li><bold><a href="">My Blogs ></a></bold></li>
+            <li><bold><a href="<?= $BASE ?>/MyBlogs">My Blogs ></a></bold></li>
             <li><bold><a href="<?= $BASE ?>/CreateBlog">Create Blog ></a></bold></li>
             <li><bold><a href="<?= $BASE ?>/About">About Us ></a></bold></li>
             <li><bold><a href="<?= $BASE ?>/Logout">Log Out ></a></bold></li>
