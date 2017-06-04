@@ -82,7 +82,7 @@ require("../../../other/blogs_config.php");
                 {
                     if($_POST['title'] !== '' && $_POST['title'] !== null && $_POST['entry'] !== '' && $_POST['entry'] !== null)
                     {
-                        if($_POST['postID'] === null)
+                        if($_POST['postID'] === null || $_POST['postID'] === "")
                         {
                             $db->CreatePost($_POST['title'], $_POST['entry'], $user->getUserID());
                         }
